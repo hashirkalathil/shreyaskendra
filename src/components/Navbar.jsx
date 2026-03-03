@@ -26,7 +26,7 @@ export default function Navbar() {
     return (
         <>
             <div className={`fixed w-full flex justify-center z-100 transition-all duration-500 ${isScrolled ? 'py-2' : 'py-4'}`}>
-                <nav className={`max-w-[1400px] flex items-center justify-between px-8 py-3 w-[95%] rounded-2xl transition-all duration-500 ${isScrolled ? 'bg-white/80 backdrop-blur-xl shadow-lg border border-white/20' : 'bg-transparent'}`}>
+                <nav className={`max-w-[1400px] flex items-center justify-between px-8 py-3 w-[95%] rounded-2xl transition-all duration-500 ${isScrolled ? 'bg-white backdrop-blur-xl shadow-lg border border-white/20' : 'bg-white'}`}>
 
                     {/* Logo Section */}
                     <Link href="/" className="flex items-center gap-3 group">
