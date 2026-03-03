@@ -55,7 +55,10 @@ export default function HomeHero() {
               </button>
             </Link>
 
-            <ContactButton />
+            <ContactButton
+              isWhatsApp={true}
+              message={"ശ്രേയസ് കേന്ദ്രയെ കുറിച്ച് കുടുതൽ അറിയണം"}
+            />
           </div>
         </div>
 
