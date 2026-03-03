@@ -20,6 +20,7 @@ export default function Pricing() {
                 'വീട്ടിൽ നിന്ന് മാർക്കറ്റിംഗ് മാത്രം ചെയ്താൽ മതി',
                 'മാർക്കറ്റിങ് സപ്പോർട്ടും പ്രോസസ്സിങ്ങും'
             ],
+            specialClass: 'md:order-1 order-2',
             isPopular: false
         },
         {
@@ -32,8 +33,8 @@ export default function Pricing() {
                 'സ്വന്തം ഡിജിറ്റൽ സർവീസ് സെന്റർ ആരംഭിക്കാം',
                 'ഹൈ ഇൻകം സർവീസുകൾ',
                 'വെബ്സൈറ്റ്, ടെക്നിക്കൽ സപ്പോർട്ട്, ട്രെയിനിംഗ് ഉൾപ്പെടുന്നു',
-                'Freelance മോഡൽ - ഓഫീസ് വേണ്ട, കമ്മീഷൻ മാത്രം'
             ],
+            specialClass: 'md:order-2 order-1',
             isPopular: true
         }
     ];
@@ -69,7 +70,7 @@ export default function Pricing() {
                             className={`relative group p-10 rounded-[2.5rem] transition-all duration-500 flex flex-col ${pkg.isPopular
                                     ? 'bg-white border-2 border-brand shadow-2xl scale-105 z-10'
                                     : 'bg-white border border-gray-100 shadow-xl hover:shadow-2xl hover:border-brand/20'
-                                }`}
+                                } ${pkg.specialClass}`}
                         >
                             {pkg.isPopular && (
                                 <div className="absolute top-0 right-10 -translate-y-1/2 bg-brand text-white px-6 py-2 rounded-full text-xs font-black uppercase tracking-widest shadow-lg">

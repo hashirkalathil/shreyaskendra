@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import ContactButton from './ui/ContactButton';
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -50,11 +51,10 @@ export default function Navbar() {
 
                     {/* CTA Section (Desktop) */}
                     <div className="hidden md:block">
-                        <Link href="#contact">
-                            <button className="bg-brand text-white px-8 py-2.5 rounded-full font-black text-xs uppercase tracking-widest hover:bg-white hover:text-brand border-2 border-brand transition-all duration-300 shadow-lg shadow-brand/20 active:scale-95">
-                                Contact Us
-                            </button>
-                        </Link>
+                        <ContactButton
+                            isWhatsApp={true}
+                            message={"ശ്രേയസ് കേന്ദ്രയെ കുറിച്ച് കുടുതൽ അറിയണം"}
+                        />
                     </div>
 
                     {/* Mobile Toggle */}
@@ -87,11 +87,10 @@ export default function Navbar() {
                             {link.name}
                         </Link>
                     ))}
-                    <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)} className={`pt-4 ${isMobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`} style={{ transitionDelay: '500ms' }}>
-                        <button className="bg-brand text-white px-12 py-4 rounded-full font-black text-sm uppercase tracking-widest shadow-2xl active:scale-95">
-                            Contact Us
-                        </button>
-                    </Link>
+                    <ContactButton
+                        isWhatsApp={true}
+                        message={"ശ്രേയസ് കേന്ദ്രയെ കുറിച്ച് കുടുതൽ അറിയണം"}
+                    />
                 </div>
             </div>
         </>

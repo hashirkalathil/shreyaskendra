@@ -19,12 +19,12 @@ export default function About() {
     },
     {
       title: "പൂർണ്ണ പിന്തുണ",
-      description: "സമഗ്രമായ ഓൺലൈൻ ട്രെയിനിംഗും, തുടർച്ചയായ ടെക്നിക്കൽ & പ്രോസസ്സിംഗ് സപ്പോർട്ടും.",
+      description: "സമഗ്രമായ ഓൺലൈൻ ട്രെയിനിംഗും, മികച്ച ടെക്നിക്കൽ & പ്രോസസ്സിംഗ് സപ്പോർട്ടും.",
       icon: <SupportIcon />
     },
     {
       title: "എളുപ്പ രീതി",
-      description: "ഫ്രാഞ്ചൈസികൾക്ക് മാർക്കറ്റിംഗ് മാത്രം ശ്രദ്ധിച്ചാൽ മതി, പ്രോസസ്സിംഗ് ഞങ്ങൾ പിന്തുണയ്ക്കും.",
+      description: "ഫ്രീലാന്റ്സ് ആയി ചെയ്യാവുന്ന കുറഞ്ഞ പാക്കേജുകളിൽ ഫ്രാഞ്ചൈസികൾക്ക് മാർക്കറ്റിംഗ് മാത്രം ശ്രദ്ധിച്ചാൽ മതി, പ്രോസസ്സിംഗ് ഞങ്ങൾ പിന്തുണയ്ക്കും.",
       icon: <WorkflowIcon />
     }
   ]
@@ -34,6 +34,14 @@ export default function About() {
   return (
     <section id="about" className="py-14 md:py-24 px-6 bg-white overflow-hidden relative">
       <div className="max-w-6xl mx-auto text-center space-y-12">
+
+        <div className='space-y-4 animate-fade-in-up'>
+          <Header 
+            title={"ABOUT"}
+            highlight={"US"}
+            secondaryDescription={"Headquartered in Ernakulam and operating since 2021, Shreyas Kendra is a comprehensive digital network that integrates the concept of a Janasevana Kendra with a range of high-income potential services. With basic infrastructure such as an office space, computer, printer, and internet connection, a Shreyas Kendra franchise can be started anywhere in Kerala. Franchise packages are also available for those who wish to start without basic infrastructure."}
+          />
+        </div>
 
         {/* Section Header */}
         <div className="space-y-4 animate-fade-in-up">

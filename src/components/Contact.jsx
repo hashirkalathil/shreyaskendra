@@ -46,7 +46,7 @@ export default function Contact() {
                                 <MapPinIcon />
                             </div>
                             <div>
-                                <p className="text-purple-200 leading-relaxed max-w-sm">Ground Floor, Building No. 3100, Ward No. 2013/61, Manikath Road, Ravipuram, Kochi, Ernakulam, 682016</p>
+                                <p className="text-purple-200 leading-relaxed max-w-sm">Ground Floor of Building No. 3100, Ward No. 2013/61, Manikath Road, Ravipuram, Kochi, Ernakulam, 682016</p>
                             </div>
                         </div>
 
