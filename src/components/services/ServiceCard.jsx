@@ -1,8 +1,8 @@
-export default function ServiceCard({ icon, title, description, isHovered = false }) {
+export default function ServiceCard({ icon, title, description, image, isHovered = false }) {
 
     const containerClasses = isHovered
         ? "bg-[#92278f] text-white border-[#92278f] scale-[1.02]"
-        : "bg-gray-100 hover:bg-[#92278f] group transition-all duration-500 text-gray-800 border-transparent shadow-sm hover:shadow-2xl hover:text-white";
+        : "bg-white hover:bg-[#92278f] group transition-all duration-500 text-gray-800 border-gray-100 shadow-lg hover:shadow-2xl hover:text-white";
 
     const accentClasses = isHovered
         ? "bg-white"
@@ -20,32 +20,41 @@ export default function ServiceCard({ icon, title, description, isHovered = fals
         ? "text-white"
         : "text-gray-600 group-hover:text-white";
 
-    const linkClasses = isHovered
-        ? "text-white"
-        : "text-[#92278f] group-hover:text-white";
-
     return (
-        <div className={`relative md:px-10 px-5 md:py-5 py-2 md:rounded-[2.5rem] rounded-3xl flex flex-col items-start md:min-h-[320px] min-h-[180px] transition-all duration-500 ease-out border-2 ${containerClasses}`}>
+        <div className={`relative flex flex-col items-start md:rounded-[2.5rem] rounded-3xl overflow-hidden transition-all duration-500 ease-out border-2 ${containerClasses}`}>
 
-            {/* Left Accent Bar */}
-            <div className={`absolute left-0 top-12 accent-bar ${accentClasses}`}></div>
+            {/* Image Section */}
+            {image && (
+                <div className="w-full aspect-8/10 overflow-hidden relative">
+                    <img
+                        src={image}
+                        alt={title}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent"></div>
+                </div>
+            )}
 
-            {/* Icon Circle */}
-            <div className={`md:w-16 w-10 md:h-16 h-10 p-2 md:p-0 rounded-full flex items-center justify-center md:text-3xl text-xl md:mb-10 mb-3 mt-2 shadow-sm transition-all duration-500 ${iconBgClasses}`}>
-                {icon}
+            <div className="relative w-full md:px-10 px-6 pb-10 pt-8 flex-1">
+                {/* Left Accent Bar */}
+                <div className={`absolute left-0 top-10 accent-bar ${accentClasses}`}></div>
+
+                {/* Icon Circle */}
+                <div className={`md:w-16 w-12 md:h-16 h-12 rounded-full flex items-center justify-center md:text-3xl text-xl mb-6 shadow-md transition-all duration-500 absolute -top-8 left-10 ${iconBgClasses}`}>
+                    {icon}
+                </div>
+
+                {/* Content */}
+                <div className="mt-4">
+                    <h3 className={`md:text-2xl text-xl font-black md:mb-4 mb-3 leading-tight transition-colors ${titleClasses}`}>
+                        {title}
+                    </h3>
+
+                    <p className={`md:text-[16.5px] text-[15px] md:leading-relaxed transition-colors ${descClasses}`}>
+                        {description}
+                    </p>
+                </div>
             </div>
-
-            {/* Content */}
-            <div className="flex-1">
-                <h3 className={`md:text-2xl text-xl font-black md:mb-4 mb-3 leading-tight transition-colors ${titleClasses}`}>
-                    {title}
-                </h3>
-
-                <p className={`md:text-[16px] text-sm md:leading-relaxed transition-colors ${descClasses}`}>
-                    {description}
-                </p>
-            </div>
-
         </div>
     );
 }

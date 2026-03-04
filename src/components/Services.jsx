@@ -23,6 +23,7 @@ export default function Services() {
 
                     {/* Card 1: Jana Sevana (Forced Hover Visualization) */}
                     <ServiceCard
+                        image="/services/jana-sevana.png"
                         icon={<JanaSevanaIcon />}
                         title="ജനസേവന കേന്ദ്രം"
                         description="എല്ലാവിധ സർക്കാർ ഓൺലൈൻ സേവനങ്ങളും ഒരൊറ്റ പ്ലാറ്റ്ഫോമിൽ. ഓൺലൈൻ ട്രെയിനിങ്ങും തുടർച്ചയായ സപ്പോർട്ടും ലഭ്യമാണ്."
@@ -30,6 +31,7 @@ export default function Services() {
 
                     {/* Card 2: Vehicle Loan */}
                     <ServiceCard
+                        image="/services/vehicle-loan.png"
                         icon={<VehicleLoanIcon />}
                         title="വാഹന ലോൺ (Car loan & Commercial Vehicle Loan)"
                         description="New Car, Used Car, Re-Finance, Top-Up Loans, കൂടാതെ Commercial Vehicle Loans."
@@ -37,20 +39,23 @@ export default function Services() {
 
                     {/* Card 3: Land Tharamataram */}
                     <ServiceCard
-                        icon={<LandIcon />}
-                        title="ഭൂമി തരംമാറ്റൽ സേവനങ്ങൾ"
-                        description="Data Bank-ൽ ഉൾപ്പെട്ട ഭൂമികൾ ഉൾപ്പെടെ വേഗത്തിൽ പ്രോസസ്സ് ചെയ്യുന്നു. അപേക്ഷ നിരസിച്ച കേസുകൾക്കും പരിഹാര മാർഗങ്ങൾ."
-                    />
-
-                    {/* Card 4: Admission Support */}
-                    <ServiceCard
+                        image="/services/admission-support.png"
                         icon={<AdmissionIcon />}
                         title="Admission Support (Higher Studies)"
                         description="Higher Studies, Credit Transfer, Online Courses"
                     />
 
+                    {/* Card 4: Admission Support */}
+                    <ServiceCard
+                        image="/services/land-services.png"
+                        icon={<LandIcon />}
+                        title="ഭൂമി തരംമാറ്റൽ സേവനങ്ങൾ"
+                        description="Data Bank-ൽ ഉൾപ്പെട്ട ഭൂമികൾ ഉൾപ്പെടെ വേഗത്തിൽ പ്രോസസ്സ് ചെയ്യുന്നു. അപേക്ഷ നിരസിച്ച കേസുകൾക്കും പരിഹാര മാർഗങ്ങൾ."
+                    />
+
                     {/* Card 5: Financial Services */}
                     <ServiceCard
+                        image="/services/financial-services.png"
                         icon={<BankingIcon />}
                         title="Financial & Banking Services"
                         description="Mini ATM, Money Transfer, പ്രമുഖ ബാങ്കുകളുടെ Insurance Products, Stock market Investment Plans."
@@ -58,6 +63,7 @@ export default function Services() {
 
                     {/* Card 6: Other Services */}
                     <ServiceCard
+                        image="/services/other-services.png"
                         icon={<OtherServicesIcon />}
                         title="മറ്റ് സർവീസുകൾ"
                         description="GST Filing, ISO Certification, Trade Mark Registration, Loan Project Report, Ticket Booking, Matrimonial Services."
