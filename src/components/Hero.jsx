@@ -37,7 +37,7 @@ export default function HomeHero() {
               ആരംഭിക്കാം
             </h1>
 
-            <p className="md:text-xl text-lg md:text-gray-800 text-white leading-relaxed animate-fade-in-up delay-200 local-font-gayathri">
+            <p className="md:text-xl text-lg md:text-gray-800 text-white leading-relaxed tracking-wide animate-fade-in-up delay-200 local-font-gayathri">
               കുറഞ്ഞ നിക്ഷേപത്തിൽ ഉയർന്ന വരുമാനം നേടാൻ മികച്ച അവസരം. കേരളത്തിലെ മികച്ച ഡിജിറ്റൽ നെറ്റ്‌വർക്കിൽ ഇന്നുതന്നെ പങ്കാളിയാകൂ.
             </p>
           </div>
