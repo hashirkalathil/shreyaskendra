@@ -2,7 +2,7 @@ export default function ServiceCard({ icon, title, description, image, isHovered
 
     const containerClasses = isHovered
         ? "bg-[#92278f] text-white border-[#92278f] scale-[1.02]"
-        : "bg-white hover:bg-[#92278f] group transition-all duration-500 text-gray-800 border-gray-100 shadow-lg hover:shadow-2xl hover:text-white";
+        : "bg-white hover:bg-[#92278f] group transition-all duration-500 text-gray-900 border-gray-100 shadow-lg hover:shadow-2xl hover:text-white";
 
     const accentClasses = isHovered
         ? "bg-white"
@@ -14,7 +14,7 @@ export default function ServiceCard({ icon, title, description, image, isHovered
 
     const titleClasses = isHovered
         ? "text-white"
-        : "text-gray-900 group-hover:text-white";
+        : "text-black group-hover:text-white";
 
     const descClasses = isHovered
         ? "text-white"

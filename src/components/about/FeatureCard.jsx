@@ -5,10 +5,10 @@ export default function FeatureCard({ item }) {
             <div className="md:w-14 w-10 md:h-14 h-10 md:bg-brand bg-white rounded-2xl flex items-center justify-center md:mb-6 mb-3 md:text-white text-brand group-hover:bg-brand group-hover:text-white transition-all duration-700">
                 {item.icon}
             </div>
-            <h3 className="font-black md:text-xl text-lg md:mb-3 mb-2 md:text-gray-900 text-white local-font-anekmalayalam group-hover:text-white">
+            <h3 className="font-black md:text-xl text-lg md:mb-3 mb-2 md:text-black text-white local-font-anekmalayalam group-hover:text-white">
                 {item.title}
             </h3>
-            <p className="md:text-gray-900 text-white/95 text-[17px] md:leading-relaxed font-medium group-hover:text-white">
+            <p className="md:text-black text-white/95 text-[17px] md:leading-relaxed font-medium group-hover:text-white">
                 {item.description}
             </p>
         </div>

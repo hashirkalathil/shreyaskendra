@@ -71,27 +71,27 @@ export default function Contact() {
                 </div>
 
                 {/* Contact Form Side */}
-                <div className="bg-white text-gray-800 p-10 md:p-12 rounded-[3rem] shadow-2xl relative animate-fade-in-up" style={{ animationDelay: '200ms' }}>
+                <div className="bg-white text-gray-900 p-10 md:p-12 rounded-[3rem] shadow-2xl relative animate-fade-in-up" style={{ animationDelay: '200ms' }}>
                     <div className="absolute top-0 right-0 p-8 opacity-5">
                         <svg width="120" height="120" viewBox="0 0 100 100" className="text-brand">
                             <path d="M50 10 L90 90 L10 90 Z" fill="currentColor" />
                         </svg>
                     </div>
 
-                    <h3 className="text-3xl font-black mb-8 text-gray-900 tracking-tight">
+                    <h3 className="text-3xl font-black mb-8 text-black tracking-tight">
                         Contact Us
                     </h3>
 
                     <form className="space-y-6" onSubmit={handleSubmit}>
                         {/* Name Field */}
                         <div className="space-y-1">
-                            <label className="text-xs font-black uppercase tracking-widest text-gray-400 ml-1">Your Name</label>
+                            <label className="text-xs font-black uppercase tracking-widest text-gray-700 ml-1">Your Name</label>
                             <input
                                 type="text"
                                 id="name"
                                 value={formData.name}
                                 onChange={handleChange}
-                                className="w-full px-6 py-4 bg-gray-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all font-bold text-gray-800"
+                                className="w-full px-6 py-4 bg-gray-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all font-bold text-gray-900"
                                 placeholder="Enter your name"
                                 required
                             />
@@ -99,13 +99,13 @@ export default function Contact() {
 
                         {/* Email Field */}
                         <div className="space-y-1">
-                            <label className="text-xs font-black uppercase tracking-widest text-gray-400 ml-1">Your Email</label>
+                            <label className="text-xs font-black uppercase tracking-widest text-gray-700 ml-1">Your Email</label>
                             <input
                                 type="email"
                                 id="email"
                                 value={formData.email}
                                 onChange={handleChange}
-                                className="w-full px-6 py-4 bg-gray-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all font-bold text-gray-800"
+                                className="w-full px-6 py-4 bg-gray-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all font-bold text-gray-900"
                                 placeholder="Enter your email"
                                 required
                             />
@@ -113,13 +113,13 @@ export default function Contact() {
 
                         {/* Subject field */}
                         <div className="space-y-1">
-                            <label className="text-xs font-black uppercase tracking-widest text-gray-400 ml-1">Subject</label>
+                            <label className="text-xs font-black uppercase tracking-widest text-gray-700 ml-1">Subject</label>
                             <input
                                 type="text"
                                 id="subject"
                                 value={formData.subject}
                                 onChange={handleChange}
-                                className="w-full px-6 py-4 bg-gray-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all font-bold text-gray-800"
+                                className="w-full px-6 py-4 bg-gray-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all font-bold text-gray-900"
                                 placeholder="How can we help?"
                                 required
                             />
@@ -127,12 +127,12 @@ export default function Contact() {
 
                         {/* Message field */}
                         <div className="space-y-1">
-                            <label className="text-xs font-black uppercase tracking-widest text-gray-400 ml-1">Your Message</label>
+                            <label className="text-xs font-black uppercase tracking-widest text-gray-700 ml-1">Your Message</label>
                             <textarea
                                 id="message"
                                 value={formData.message}
                                 onChange={handleChange}
-                                className="w-full px-6 py-4 bg-gray-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all font-bold text-gray-800 resize-none"
+                                className="w-full px-6 py-4 bg-gray-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all font-bold text-gray-900 resize-none"
                                 placeholder="Tell us more..."
                                 rows="4"
                                 required
@@ -151,8 +151,8 @@ export default function Contact() {
                         </button>
                     </form>
 
-                    <p className="text-sm font-medium text-center text-gray-400 mt-6">
-                        Your information will be kept <span className="text-gray-600 font-bold">100% confidential.</span>
+                    <p className="text-sm font-medium text-center text-gray-700 mt-6">
+                        Your information will be kept <span className="text-gray-800 font-bold">100% confidential.</span>
                     </p>
                 </div>
 

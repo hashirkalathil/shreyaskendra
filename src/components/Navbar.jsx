@@ -41,7 +41,7 @@ export default function Navbar() {
                             <Link
                                 key={link.name}
                                 href={link.href}
-                                className="relative px-4 py-2 text-[15px] font-bold text-gray-700 hover:text-brand transition-colors duration-300 group"
+                                className="relative px-4 py-2 text-[15px] font-bold text-gray-800 hover:text-brand transition-colors duration-300 group"
                             >
                                 {link.name}
                                 <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-brand transition-all duration-300 group-hover:w-full group-hover:left-0 rounded-full"></span>
@@ -81,7 +81,7 @@ export default function Navbar() {
                             key={link.name}
                             href={link.href}
                             onClick={() => setIsMobileMenuOpen(false)}
-                            className={`text-3xl font-black text-gray-900 hover:text-brand transition-all duration-300 transform ${isMobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
+                            className={`text-3xl font-black text-black hover:text-brand transition-all duration-300 transform ${isMobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
                             style={{ transitionDelay: `${idx * 100}ms` }}
                         >
                             {link.name}

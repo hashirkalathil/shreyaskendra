@@ -64,7 +64,7 @@ export default function About() {
         {/* CTA Section */}
         <div className="md:mt-20 mt-10 group relative overflow-hidden rounded-3xl">
           <div className="relative md:p-16 flex flex-col items-center md:gap-8 gap-2">
-            <h4 className='text-gray-900 font-black local-font-gayathri text-2xl md:text-4xl leading-tight max-w-4xl text-center'>
+            <h4 className='text-black font-black local-font-gayathri text-2xl md:text-4xl leading-tight max-w-4xl text-center'>
               നിങ്ങളുടെ സ്വന്തമായ <span className="text-brand inline-block transition-transform cursor-default">ഡിജിറ്റൽ വരുമാന കേന്ദ്രം</span> ആരംഭിക്കാൻ ഇന്ന് തന്നെ ബന്ധപ്പെടൂ.
             </h4>
 

@@ -68,8 +68,8 @@ export default function Pricing() {
                         <div
                             key={pkg.id}
                             className={`relative group p-10 rounded-[2.5rem] transition-all duration-500 flex flex-col ${pkg.isPopular
-                                    ? 'bg-white border-2 border-brand shadow-2xl scale-105 z-10'
-                                    : 'bg-white border border-gray-100 shadow-xl hover:shadow-2xl hover:border-brand/20'
+                                ? 'bg-white border-2 border-brand shadow-2xl scale-105 z-10'
+                                : 'bg-white border border-gray-100 shadow-xl hover:shadow-2xl hover:border-brand/20'
                                 } ${pkg.specialClass}`}
                         >
                             {pkg.isPopular && (
@@ -79,14 +79,14 @@ export default function Pricing() {
                             )}
 
                             <div className="mb-8">
-                                <h3 className={`text-xl font-black transition-colors ${pkg.isPopular ? 'text-brand' : 'text-gray-400 group-hover:text-brand'}`}>
+                                <h3 className={`text-xl font-black transition-colors ${pkg.isPopular ? 'text-brand' : 'text-gray-700 group-hover:text-brand'}`}>
                                     {pkg.name}
                                 </h3>
                                 <div className="flex items-baseline gap-1 mt-4">
-                                    <span className="text-4xl md:text-5xl font-black text-gray-900 tracking-tight">₹{pkg.price}</span>
-                                    <span className="text-gray-900 font-medium">മുതൽ</span>
+                                    <span className="text-4xl md:text-5xl font-black text-black tracking-tight">₹{pkg.price}</span>
+                                    <span className="text-black font-medium">മുതൽ</span>
                                 </div>
-                                <p className="mt-4 text-gray-900 leading-relaxed font-medium">
+                                <p className="mt-4 text-black leading-relaxed font-medium">
                                     {pkg.description}
                                 </p>
                                 {pkg.subPrice && (
@@ -100,7 +100,7 @@ export default function Pricing() {
                                         <div className="w-6 h-6 rounded-full bg-brand/10 flex items-center justify-center shrink-0 group-hover/item:bg-brand transition-colors">
                                             <span className="text-brand group-hover/item:text-white text-sm transition-colors">✔</span>
                                         </div>
-                                        <span className="text-gray-900 font-medium group-hover/item:text-gray-900 transition-colors">
+                                        <span className="text-black font-medium group-hover/item:text-black transition-colors">
                                             {feature}
                                         </span>
                                     </li>
@@ -110,8 +110,8 @@ export default function Pricing() {
                             <button
                                 onClick={() => handleSelect(pkg)}
                                 className={`w-full py-5 rounded-2xl font-black tracking-widest uppercase text-sm transition-all duration-300 shadow-lg active:scale-95 ${pkg.isPopular
-                                        ? 'bg-brand text-white hover:bg-brand-dark shadow-brand/20'
-                                        : 'bg-gray-50 text-brand border-2 border-brand/10 hover:border-brand hover:bg-brand hover:text-white'
+                                    ? 'bg-brand text-white hover:bg-brand-dark shadow-brand/20'
+                                    : 'bg-gray-50 text-brand border-2 border-brand/10 hover:border-brand hover:bg-brand hover:text-white'
                                     }`}
                             >
                                 തിരഞ്ഞെടുക്കുക
@@ -142,34 +142,34 @@ export default function Pricing() {
 
                         <form onSubmit={handleSubmit} className="p-8 space-y-6">
                             <div className="space-y-1">
-                                <label className="text-xs font-black uppercase tracking-widest text-gray-400 ml-1">Full Name</label>
+                                <label className="text-xs font-black uppercase tracking-widest text-gray-700 ml-1">Full Name</label>
                                 <input
                                     required
                                     type="text"
                                     placeholder="നിങ്ങളുടെ പേര്"
-                                    className="w-full px-5 py-4 bg-gray-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all font-bold text-gray-900"
+                                    className="w-full px-5 py-4 bg-gray-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all font-bold text-black"
                                     value={formData.name}
                                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                                 />
                             </div>
                             <div className="space-y-1">
-                                <label className="text-xs font-black uppercase tracking-widest text-gray-400 ml-1">Phone Number</label>
+                                <label className="text-xs font-black uppercase tracking-widest text-gray-700 ml-1">Phone Number</label>
                                 <input
                                     required
                                     type="tel"
                                     placeholder="നിങ്ങളുടെ ഫോൺ നമ്പർ"
-                                    className="w-full px-5 py-4 bg-gray-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all font-bold text-gray-900"
+                                    className="w-full px-5 py-4 bg-gray-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all font-bold text-black"
                                     value={formData.phone}
                                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                                 />
                             </div>
                             <div className="space-y-1">
-                                <label className="text-xs font-black uppercase tracking-widest text-gray-400 ml-1">Email Address</label>
+                                <label className="text-xs font-black uppercase tracking-widest text-gray-700 ml-1">Email Address</label>
                                 <input
                                     required
                                     type="email"
                                     placeholder="നിങ്ങളുടെ ഇമെയിൽ"
-                                    className="w-full px-5 py-4 bg-gray-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all font-bold text-gray-900"
+                                    className="w-full px-5 py-4 bg-gray-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all font-bold text-black"
                                     value={formData.email}
                                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                                 />

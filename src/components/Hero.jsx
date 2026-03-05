@@ -29,7 +29,7 @@ export default function HomeHero() {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-black leading-[1.1] md:text-gray-900 text-white animate-fade-in-up delay-100 local-font-anekmalayalam">
+            <h1 className="text-4xl md:text-5xl font-black leading-[1.1] md:text-black text-white animate-fade-in-up delay-100 local-font-anekmalayalam">
               നിങ്ങളുടെ സ്വന്തം <br />
               <span className="bg-white md:bg-brand bg-clip-text text-transparent drop-shadow-sm font-black local-font-anekmalayalam">
                 ഡിജിറ്റൽ ബിസിനസ്സ്
@@ -37,7 +37,7 @@ export default function HomeHero() {
               ആരംഭിക്കാം
             </h1>
 
-            <p className="md:text-xl text-lg md:text-gray-600 text-white leading-relaxed animate-fade-in-up delay-200 local-font-gayathri">
+            <p className="md:text-xl text-lg md:text-gray-800 text-white leading-relaxed animate-fade-in-up delay-200 local-font-gayathri">
               കുറഞ്ഞ നിക്ഷേപത്തിൽ ഉയർന്ന വരുമാനം നേടാൻ മികച്ച അവസരം. കേരളത്തിലെ മികച്ച ഡിജിറ്റൽ നെറ്റ്‌വർക്കിൽ ഇന്നുതന്നെ പങ്കാളിയാകൂ.
             </p>
           </div>
