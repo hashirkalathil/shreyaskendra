@@ -84,9 +84,9 @@ export default function Pricing() {
                                 </h3>
                                 <div className="flex items-baseline gap-1 mt-4">
                                     <span className="text-4xl md:text-5xl font-black text-gray-900 tracking-tight">₹{pkg.price}</span>
-                                    <span className="text-gray-500 font-medium">മുതൽ</span>
+                                    <span className="text-gray-900 font-medium">മുതൽ</span>
                                 </div>
-                                <p className="mt-4 text-gray-500 leading-relaxed font-medium">
+                                <p className="mt-4 text-gray-900 leading-relaxed font-medium">
                                     {pkg.description}
                                 </p>
                                 {pkg.subPrice && (
@@ -100,7 +100,7 @@ export default function Pricing() {
                                         <div className="w-6 h-6 rounded-full bg-brand/10 flex items-center justify-center shrink-0 group-hover/item:bg-brand transition-colors">
                                             <span className="text-brand group-hover/item:text-white text-sm transition-colors">✔</span>
                                         </div>
-                                        <span className="text-gray-600 font-medium group-hover/item:text-gray-900 transition-colors">
+                                        <span className="text-gray-900 font-medium group-hover/item:text-gray-900 transition-colors">
                                             {feature}
                                         </span>
                                     </li>
@@ -147,7 +147,7 @@ export default function Pricing() {
                                     required
                                     type="text"
                                     placeholder="നിങ്ങളുടെ പേര്"
-                                    className="w-full px-5 py-4 bg-gray-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all font-bold text-gray-800"
+                                    className="w-full px-5 py-4 bg-gray-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all font-bold text-gray-900"
                                     value={formData.name}
                                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                                 />
@@ -158,7 +158,7 @@ export default function Pricing() {
                                     required
                                     type="tel"
                                     placeholder="നിങ്ങളുടെ ഫോൺ നമ്പർ"
-                                    className="w-full px-5 py-4 bg-gray-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all font-bold text-gray-800"
+                                    className="w-full px-5 py-4 bg-gray-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all font-bold text-gray-900"
                                     value={formData.phone}
                                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                                 />
@@ -169,7 +169,7 @@ export default function Pricing() {
                                     required
                                     type="email"
                                     placeholder="നിങ്ങളുടെ ഇമെയിൽ"
-                                    className="w-full px-5 py-4 bg-gray-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all font-bold text-gray-800"
+                                    className="w-full px-5 py-4 bg-gray-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all font-bold text-gray-900"
                                     value={formData.email}
                                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                                 />

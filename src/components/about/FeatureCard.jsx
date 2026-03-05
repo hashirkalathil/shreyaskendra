@@ -8,7 +8,7 @@ export default function FeatureCard({ item }) {
             <h3 className="font-black md:text-xl text-lg md:mb-3 mb-2 md:text-gray-900 text-white local-font-anekmalayalam group-hover:text-white">
                 {item.title}
             </h3>
-            <p className="md:text-gray-600 text-white/80 md:text-[16px] text-sm md:leading-relaxed font-medium group-hover:text-white">
+            <p className="md:text-gray-900 text-white/95 text-[16px] md:leading-relaxed font-medium group-hover:text-white">
                 {item.description}
             </p>
         </div>

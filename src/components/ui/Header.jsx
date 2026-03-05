@@ -10,7 +10,7 @@ export default function Header({ title, highlight, description, secondaryDescrip
                     {description}
                 </p>
                 {secondaryDescription && (
-                    <p className="text-gray-500 text-base md:text-lg md:leading-relaxed leading-snug font-medium italic border-t border-gray-100 pt-4 mt-4">
+                    <p className="text-gray-700 text-base md:text-lg md:leading-relaxed leading-snug font-medium italic border-t border-gray-100 pt-4 mt-4">
                         {secondaryDescription}
                     </p>
                 )}

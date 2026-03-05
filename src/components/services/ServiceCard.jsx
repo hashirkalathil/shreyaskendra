@@ -18,7 +18,7 @@ export default function ServiceCard({ icon, title, description, image, isHovered
 
     const descClasses = isHovered
         ? "text-white"
-        : "text-gray-600 group-hover:text-white";
+        : "text-black group-hover:text-white";
 
     return (
         <div className={`relative flex flex-col items-start md:rounded-[2.5rem] rounded-3xl overflow-hidden transition-all duration-500 ease-out border-2 ${containerClasses}`}>
