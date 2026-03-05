@@ -50,7 +50,7 @@ export default function ServiceCard({ icon, title, description, image, isHovered
                         {title}
                     </h3>
 
-                    <p className={`md:text-[16.5px] text-[15px] md:leading-relaxed transition-colors ${descClasses}`}>
+                    <p className={`text-[16.5px] md:leading-relaxed transition-colors ${descClasses}`}>
                         {description}
                     </p>
                 </div>

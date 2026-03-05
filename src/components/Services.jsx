@@ -50,7 +50,7 @@ export default function Services() {
                         image="/services/land-services.png"
                         icon={<LandIcon />}
                         title="ഭൂമി തരംമാറ്റൽ സേവനങ്ങൾ"
-                        description="Data Bank-ൽ ഉൾപ്പെട്ട ഭൂമികൾ ഉൾപ്പെടെ വേഗത്തിൽ പ്രോസസ്സ് ചെയ്യുന്നു. അപേക്ഷ നിരസിച്ച കേസുകൾക്കും പരിഹാര മാർഗങ്ങൾ."
+                        description="Data Bank-ൽ ഉൾപ്പെട്ട ഭൂമികൾ ഉൾപ്പെടെ വേഗത്തിൽ പ്രോസസ്സ് ചെയ്യുന്നു. അപേക്ഷ നിരസിച്ച കേസുകൾക്കും പരിഹാര മാർഗ്ഗങ്ങൾ."
                     />
 
                     {/* Card 5: Financial Services */}
